@@ -4,11 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arsalan Ali - Portfolio</title>
-    <link rel="stylesheet" href="assets/styles-AG2PliWD.css" />
-    <link rel="stylesheet" href="assets/PdfViewerClient-CBXYWCWZ.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/PdfViewerClient.css" />
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="assets/index-DA2Br4et.js"></script>
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t === "light") {
+            document.documentElement.classList.add("light");
+          }
+        } catch (e) {
+          /* ignore */
+        }
+      })();
+    </script>
+    <script type="module" src="assets/index.js"></script>
   </body>
 </html>
